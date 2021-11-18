@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
 
         dessertTimer = DessertTimer(this.lifecycle)
         // Set the TextViews to the right values
-        if(savedInstanceState != null){
+        if(savedInstanceState != null) {
             revenue = savedInstanceState.getInt(KEY_REVENUE)
             dessertsSold = savedInstanceState.getInt(KEY_DESSERT_SOLD)
             dessertTimer.secondsCount = savedInstanceState.getInt(KEY_DESSERT_TIMER)
